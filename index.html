@@ -16,11 +16,12 @@
     <title>Dutch AI Poem generator</title>
   </head>
   <body>
-    <div class="container"></div>
+    
       <header>
         <h1>AI Dutch Poem Generator 🇳🇱</h1>
       </header>
       <main>
+        <div class="form-container">
         <form id="poem-generator">
           <input
             type="text"
@@ -32,8 +33,11 @@
             id="user-information"
           />
           <input type="submit" class="submit-button" />
+          <div class="clue">ie. Joy, Beach or Amsterdam</div>
         </form>
-        <div class="poem" id="poem"></div>
+        </div>
+        
+        <div class="poem hidden blink" id="poem"></div>
       </main>
       <footer>
         <strong>This AI project was coded by</strong>
@@ -54,6 +58,7 @@
         >
       </footer>
     </div>
+   
     <script src="src/script.js"></script>
   </body>
 </html>
