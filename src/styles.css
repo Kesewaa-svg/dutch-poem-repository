@@ -31,12 +31,21 @@ a:hover {
   cursor: pointer;
 }
 
-form {
-  text-align: center;
-  padding: 40px;
+.form-container {
+  padding: 20px 40px;
   box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
   border-radius: 10px;
   margin: 0 30px;
+}
+form {
+  text-align: center;
+}
+
+.clue {
+  line-height: 1.5;
+  font-size: 12px;
+  margin-top: 10px;
+  opacity: 0.6;
 }
 
 footer {
@@ -56,13 +65,13 @@ footer {
 
 .poem-generator {
   margin: 0 auto;
-  padding: 30px 0;
+  padding: 20px 0;
 }
 
 .information {
   padding: 16px;
   border: 1px solid rgba(39, 33, 66, 0.5);
-  width: 50%;
+  width: 40%;
   font-size: 16px;
   border-radius: 50px;
   line-height: 20px;
@@ -85,7 +94,7 @@ footer {
 .poem {
   font-family: "Ephesis", cursive;
   font-size: 24px;
-  color: darkblue;
+  color: black;
   padding: 20px;
   line-height: 1.5;
   border: 2px solid #cfc89a;
@@ -93,4 +102,23 @@ footer {
   box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
   text-align: center;
   margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
